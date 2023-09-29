@@ -29,9 +29,9 @@ public:
 
 int main() 
 {
-    std::vector<int> nums = {3,3};
+    std::vector<int> nums = {2,7,11,15};
     Solution sol;
-    std::vector<int> result = sol.twoSum(nums, 6);
+    std::vector<int> result = sol.twoSum(nums, 9);
     std::cout << "Output: " << std::endl;
     for (const auto& element : result) 
     {

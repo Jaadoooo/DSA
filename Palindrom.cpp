@@ -10,8 +10,8 @@ class Solution
     public:
         bool isPalindrome(int x) 
         {
-            std::string xcopy = std::to_string(x);
-            std::string str = std::to_string(x);
+            string xcopy = to_string(x);
+            string str = to_string(x);
             int n = str.length();
             for (int i = 0; i < n / 2; i++)
                 {
@@ -19,12 +19,12 @@ class Solution
                 }
             if(str==xcopy)
             {
-                std::cout << "Yes it is a Palindrome";
+                cout << "Yes it is a Palindrome";
                 return true;
             }
             else
             {
-                std::cout << "No its not a Palindrome";
+                cout << "No its not a Palindrome";
                 return false;
             }  
         }        
@@ -34,8 +34,8 @@ class Solution
 int main() 
 {
     int num;
-    std::cout << "Enter an integer: ";
-    std::cin >> num;
+    cout << "Enter an integer: ";
+    cin >> num;
 
     Solution solution;
     solution.isPalindrome(num);

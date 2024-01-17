@@ -24,25 +24,14 @@ int main()
             cin >> arr[i];
         }
     }
-
-    int key;
-    arr[i] == key;
-
+    
+    // XOR operation
+    int x = 0;
     for(int i=0; i<n; i++)
     {
-        for(int j=0; j<n; j++)
-        {
-            if(arr[j]==key)
-            {
-                cout << "same element";
-            }
-            else
-            {
-                cout << "Unique number found - " << key;
-                break;
-            }
-        }
+        x = x^arr[i];
     }
 
+    cout << "Unique element - " << x;
 
 }

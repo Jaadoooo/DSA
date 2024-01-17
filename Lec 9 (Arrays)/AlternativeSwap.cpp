@@ -13,10 +13,23 @@ int main()
         cin >> arr[i];
     }
 
-    for(int i=0; i<n/2; i++)
-    {   
-        swap(arr[i],arr[n-1-i]);
+
+
+    if(n%2==0)
+    {
+        for(int i=0; i<n; i+=2)
+        {   
+            swap(arr[i],arr[i+1]);
+        }
     }
+    else
+    {
+        for(int i=0; i<n-1; i+=2)
+        {   
+            swap(arr[i],arr[i+1]);
+        }
+    }
+    
 
     cout << "Reversed array - ";
     for(int i=0; i<n; i++)
